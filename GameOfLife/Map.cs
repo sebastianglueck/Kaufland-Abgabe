@@ -20,21 +20,10 @@ namespace GameOfLife
         {
             bool[,] map = new bool[length, height];
 
-            int numberofpositions;
+            double numberofpositions;
 
-            if ((length * height) <= 9)
-            {
-                numberofpositions = 3;
-            }
-            else if (length * height <= 25)
-            {
-                numberofpositions = length + 5;
-            }
-            else if (length * height <= 100 && length * height >= 25)
-            {
-                numberofpositions = length * 4;
-            }
-            else { numberofpositions = length * 8;}
+            numberofpositions=(length*height)*0.51;
+
 
             for (int x = 0; x < numberofpositions; x++){
                 Random rnd = new Random();
