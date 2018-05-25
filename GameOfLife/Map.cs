@@ -8,7 +8,6 @@ namespace GameOfLife
         int length;
         int height;
 
-
         public Map(int length, int height)
         {
             this.length = length;
